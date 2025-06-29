@@ -63,5 +63,8 @@ export const Encryption = () => {
         </video>
       </div>
     </div>
+
+    
+
   );
 };

@@ -13,8 +13,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      borderRadius: {
+        '15xl': '7.5rem', // custom extra-large border radius
+      },
     },
   },
   plugins: [],
 }
+
 export default config

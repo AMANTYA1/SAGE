@@ -29,8 +29,8 @@ export const SKILL_DATA = [
   {
     skill_name: "Tailwind CSS",
     image: "tailwind.png",
-    width: 80,
-    height: 80,
+    width: 90,
+    height: 90,
   },
   {
     skill_name: "React",
@@ -38,13 +38,7 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-
+ 
   {
     skill_name: "TypeScript",
     image: "ts.png",
@@ -54,18 +48,6 @@ export const SKILL_DATA = [
   {
     skill_name: "Next.js 14",
     image: "next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
     width: 80,
     height: 80,
   },
@@ -102,67 +84,10 @@ export const SOCIALS = [
 ] as const;
 
 export const FRONTEND_SKILL = [
-  {
-    skill_name: "HTML",
-    image: "html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS",
-    image: "css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    image: "js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-
-
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
+ 
 ] as const;
 
 export const BACKEND_SKILL = [
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Express.js",
-    image: "express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-
 
 ] as const;
 
@@ -175,21 +100,21 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "🛒 Tekisky Mart – The Future of eCommerce",
-    
-    image: "/projects/project-1.webp",
-    link: "https://tekiskymart.com/",
-  },
-  {
-    title: "Tekisky – The Future of Tech",
+    title: "Fest-Book app ",
 
-    image: "/projects/project-2.webp",
-    link: "https://tekisky.com/",
+    image: "/projects/festbook.webp",
+    link: "https://fest-book.vercel.app/",
   },
   {
-    title: "Speedline Auto Parts – The Future of Auto Parts",
+    title: "Eventra – Event Management Platform",
+
+    image: "/projects/Eventra.webp",
+    link: "https://eventra-app-two.vercel.app/",
+  },
+  {
+    title: "3D Portfolio - UI/UX Design",
    
-    image: "/projects/project-3.webp",
+    image: "/projects/portfolio.webp",
     link: "https://speedlineautoparts.netlify.app/",
   },
 ] as const;
@@ -202,7 +127,7 @@ export const FOOTER_DATA = [
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com",
+        link: "https://github.com/Whitedevil2004r27",
       },
 
     ],
@@ -214,7 +139,7 @@ export const FOOTER_DATA = [
       {
         name: "Linkedin",
         icon: RxLinkedinLogo,
-        link: "https://www.linkedin.com/in/abdul-raheman-389597281/",
+        link: "https://www.linkedin.com/in/ravi-kumar-j-b29467276",
       },
     ],
   },
@@ -225,7 +150,7 @@ export const FOOTER_DATA = [
       {
         name: "Contact Me",
         icon: null,
-        link: "mailto:arrahmanofficial9@gmail.com",
+        link: "mailto:ravikumarofficial227@gmail.com",
       },
     ],
   },

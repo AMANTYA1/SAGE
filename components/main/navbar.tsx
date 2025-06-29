@@ -11,23 +11,23 @@ export const Navbar = () => {
   const closeMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-[#03001427] backdrop-blur-md shadow-lg shadow-[#2A0E61]/50 z-50">
+     <nav className="fixed top-0 w-full bg-[#03001427] backdrop-blur-md shadow-lg shadow-[#2A0E61]/50 z-50">
       <div className="flex items-center justify-between h-[65px] px-5 md:px-10">
         {/* Logo & Name */}
         <Link href="#about-me" className="flex items-center" onClick={closeMenu}>
           <Image
-            src="/logo.png"
+            src="/projects/logo.jpg" // ✅ Your uploaded logo image
             alt="Logo"
-            width={50}
-            height={50}
+            width={48} // 🔧 Icon size (2xl)
+            height={48}
+            className="cursor-pointer rounded-xl"
             draggable={false}
-            className="cursor-pointer hidden md:block lg:block"
           />
-          <span className=" md:block text-white font-bold ml-2">
-            Abdul Rahman | Devxora
+          <span className="text-white font-bold text-xl ml-3">
+            RK | Webcraft
           </span>
         </Link>
-
+      
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6 bg-[rgba(3,0,20,0.37)] px-6 py-2 rounded-full border border-[rgba(112,66,248,0.38)] text-gray-200">
           {NAV_LINKS.map((link) => (
