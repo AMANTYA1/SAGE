@@ -9,6 +9,21 @@ import {
   SKILL_DATA,
 } from "@/constants";
 
+// Step 1: Define Skill type
+type Skill = {
+  skill_name: string;
+  image: string;
+  width: number;
+  height?: number;
+};
+
+// Step 2: Cast all imported arrays to Skill[]
+const SKILL_DATA_TYPED = SKILL_DATA as Skill[];
+const FRONTEND_SKILL_TYPED = FRONTEND_SKILL as Skill[];
+const BACKEND_SKILL_TYPED = BACKEND_SKILL as Skill[];
+const FULLSTACK_SKILL_TYPED = FULLSTACK_SKILL as Skill[];
+const OTHER_SKILL_TYPED = OTHER_SKILL as Skill[];
+
 export const Skills = () => {
   return (
     <section
@@ -18,8 +33,9 @@ export const Skills = () => {
     >
       <SkillText />
 
+      {/* SKILL_DATA */}
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {SKILL_DATA.map((skill, i) => (
+        {SKILL_DATA_TYPED.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
             src={skill.image}
@@ -31,44 +47,9 @@ export const Skills = () => {
         ))}
       </div>
 
+      {/* FRONTEND_SKILL */}
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {FRONTEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {BACKEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {FULLSTACK_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {OTHER_SKILL.map((skill, i) => (
+        {FRONTEND_SKILL_TYPED.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
             src={skill.image}
@@ -80,6 +61,49 @@ export const Skills = () => {
         ))}
       </div>
 
+      {/* BACKEND_SKILL */}
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        {BACKEND_SKILL_TYPED.map((skill, i) => (
+          <SkillDataProvider
+            key={skill.skill_name}
+            src={skill.image}
+            name={skill.skill_name}
+            width={skill.width}
+            height={skill.height}
+            index={i}
+          />
+        ))}
+      </div>
+
+      {/* FULLSTACK_SKILL */}
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        {FULLSTACK_SKILL_TYPED.map((skill, i) => (
+          <SkillDataProvider
+            key={skill.skill_name}
+            src={skill.image}
+            name={skill.skill_name}
+            width={skill.width}
+            height={skill.height}
+            index={i}
+          />
+        ))}
+      </div>
+
+      {/* OTHER_SKILL */}
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        {OTHER_SKILL_TYPED.map((skill, i) => (
+          <SkillDataProvider
+            key={skill.skill_name}
+            src={skill.image}
+            name={skill.skill_name}
+            width={skill.width}
+            height={skill.height}
+            index={i}
+          />
+        ))}
+      </div>
+
+      {/* Background Video */}
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
           <video
