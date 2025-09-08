@@ -17,12 +17,12 @@ type Skill = {
   height?: number;
 };
 
-// Step 2: Cast all imported arrays to Skill[]
-const SKILL_DATA_TYPED = SKILL_DATA as Skill[];
-const FRONTEND_SKILL_TYPED = FRONTEND_SKILL as Skill[];
-const BACKEND_SKILL_TYPED = BACKEND_SKILL as Skill[];
-const FULLSTACK_SKILL_TYPED = FULLSTACK_SKILL as Skill[];
-const OTHER_SKILL_TYPED = OTHER_SKILL as Skill[];
+// Step 2: Safely cast readonly arrays to mutable Skill[]
+const SKILL_DATA_TYPED = SKILL_DATA as unknown as Skill[];
+const FRONTEND_SKILL_TYPED = FRONTEND_SKILL as unknown as Skill[];
+const BACKEND_SKILL_TYPED = BACKEND_SKILL as unknown as Skill[];
+const FULLSTACK_SKILL_TYPED = FULLSTACK_SKILL as unknown as Skill[];
+const OTHER_SKILL_TYPED = OTHER_SKILL as unknown as Skill[];
 
 export const Skills = () => {
   return (
