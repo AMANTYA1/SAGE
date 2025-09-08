@@ -14,7 +14,7 @@ type Skill = {
   skill_name: string;
   image: string;
   width: number;
-  height?: number;
+  height?: number; // optional
 };
 
 // Step 2: Safely cast readonly arrays to mutable Skill[]
@@ -41,7 +41,7 @@ export const Skills = () => {
             src={skill.image}
             name={skill.skill_name}
             width={skill.width}
-            height={skill.height}
+            height={skill.height ?? skill.width} // fallback for undefined height
             index={i}
           />
         ))}
@@ -55,7 +55,7 @@ export const Skills = () => {
             src={skill.image}
             name={skill.skill_name}
             width={skill.width}
-            height={skill.height}
+            height={skill.height ?? skill.width}
             index={i}
           />
         ))}
@@ -69,7 +69,7 @@ export const Skills = () => {
             src={skill.image}
             name={skill.skill_name}
             width={skill.width}
-            height={skill.height}
+            height={skill.height ?? skill.width}
             index={i}
           />
         ))}
@@ -83,7 +83,7 @@ export const Skills = () => {
             src={skill.image}
             name={skill.skill_name}
             width={skill.width}
-            height={skill.height}
+            height={skill.height ?? skill.width}
             index={i}
           />
         ))}
@@ -97,7 +97,7 @@ export const Skills = () => {
             src={skill.image}
             name={skill.skill_name}
             width={skill.width}
-            height={skill.height}
+            height={skill.height ?? skill.width}
             index={i}
           />
         ))}
